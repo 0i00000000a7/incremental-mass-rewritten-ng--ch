@@ -162,7 +162,7 @@ function calc(dt, dt_offline) {
     tmp.pass = true
 
     player.offline.time = Math.max(player.offline.time-tmp.offlineMult*dt_offline,0)
-    player.time += dt
+    player.time += dt/1000
 
 	tmp.dt = dt
 
